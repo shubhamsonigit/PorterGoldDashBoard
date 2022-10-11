@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Platform Version Validation",
-    "collectionId": "Platform Version Validation_JSObject1",
+    "pageId": "page1",
+    "collectionId": "page1_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -40,7 +40,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Platform Version Validation_JSObject1.myFun12",
+  "id": "page1_JSObject1.myFun12",
   "deleted": false,
   "gitSyncId": "63074c1e8b81f440510de53b_632c500c3d1992799c284599"
 }

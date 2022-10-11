@@ -1,7 +1,7 @@
 {
   "unpublishedCollection": {
     "name": "JSObject1",
-    "pageId": "Platform Version Validation",
+    "pageId": "page1",
     "pluginId": "js-plugin",
     "pluginType": "JS",
     "actions": [],
@@ -18,7 +18,7 @@
       }
     ]
   },
-  "id": "Platform Version Validation_JSObject1",
+  "id": "page1_JSObject1",
   "deleted": false,
   "gitSyncId": "63074c1e8b81f440510de53b_632c4b013d1992799c284588"
 }

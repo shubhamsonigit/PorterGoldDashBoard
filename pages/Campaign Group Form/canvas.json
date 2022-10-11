@@ -251,7 +251,7 @@
               ],
               "displayName": "JSON Form",
               "iconSVG": "/static/media/icon.6bacf7df.svg",
-              "onSubmit": "{{JSObject3.myFun2();JSObject3.myFun1();navigateTo('Page1',{})}}",
+              "onSubmit": "{{JSObject3.myFun2();JSObject3.myFun1();navigateTo('page1',{})}}",
               "topRow": 6,
               "bottomRow": 69,
               "fieldLimitExceeded": false,

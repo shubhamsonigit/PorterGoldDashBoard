@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Platform Version Validation",
-    "slug": "platform-version-validation",
+    "name": "page1",
+    "slug": "page1",
     "layouts": [
       {
         "viewMode": false,
@@ -635,7 +635,7 @@
         },
         "layoutOnLoadActions": [],
         "validOnPageLoadActions": true,
-        "id": "Platform Version Validation",
+        "id": "page1",
         "deleted": false,
         "policies": [],
         "userPermissions": []
