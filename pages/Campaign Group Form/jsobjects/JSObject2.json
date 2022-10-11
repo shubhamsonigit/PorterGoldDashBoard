@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject2",
+    "pageId": "Campaign Group Form",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\t//write code here\n\t\tlet variable=[];\n\t\tfor(let i=0;i<Api3.data.geo_regions.length;i++)\n\t\t{\n\t\t\tvariable.push(Api3.data.geo_regions[i].name);\n\t\t}\n\t\treturn variable;\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Campaign Group Form_JSObject2",
+  "deleted": false,
+  "gitSyncId": "63074c1e8b81f440510de53b_631842b8d8a8134e4063bca7"
+}

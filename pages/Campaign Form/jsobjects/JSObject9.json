@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject9",
+    "pageId": "Campaign Form",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: async() => {\n\t\t//for(let i=0;i<appsmith.store.campaigns.length;i++)\n\t\t//\t{\n\t\t\t\t//JSObject5.myFun1();\n\t\t\t//\tApi1.run()\n\t\t\t\t//fields[i]=appsmith.store.campaigns[appsmith.store.num];\n\t\t//\t\tlet num=(appsmith.store.num)+1;\n\t\t//\t\tstoreValue(\"num\",num);\n\t\t//\t}\n\t\t//return fields\n\t\t\n\t\t\n\t\tawait Api6.run();\n\t\t\n\t\tif(appsmith.store.flage==1)\n\t\t\tawait Api8.run()\n\t\t\n\t\tif(JSONForm1.formData.Campaigns.length>=1)\n\t\t\t{\n\t\t\t\t await Api1.run();\n\t\t\t}\n\t\tif(JSONForm1.formData.Campaigns.length>=2)\n\t\t\t{\n\t\t\t\tawait Api2.run();\n\t\t\t}\n\t\tif(JSONForm1.formData.Campaigns.length==3)\n\t\t\t{\n\t\t\t\tawait Api3.run();\n\t\t\t}\n\t\t\n\t\tstoreValue(\"statustemp\",\"\",false);\n\t\tstoreValue(\"typetemp\",\"\",false);\n\t\tstoreValue(\"computertemp\",\"\",false);\n\t\tstoreValue(\"startDatetemp\",\"\",false);\n\t\tstoreValue(\"endDatetemp\",\"\",false);\n\t\tstoreValue(\"georegiontempp\",\"\",false);\n\t\t\n\t\t  storeValue(\"v_type_temp\",\"\",false);\n\t\t  storeValue(\"failure_message_temp\",\"\",false);\n\t\t  storeValue(\"inverse_temp\",\"\",false);\n\t\t  storeValue(\"max_android_version_temp\",\"\",false);\n\t\t  storeValue(\"min_android_version_temp\",\"\",false);\n\t\t  storeValue(\"max_ios_version_temp\",\"\");\n\t\t  storeValue(\"min_ios_version_temp\",\"\");\n\t},\n\tmyFun2: async () => {\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Campaign Form_JSObject9",
+  "deleted": false,
+  "gitSyncId": "63074c1e8b81f440510de53b_6330853456305a3377451129"
+}

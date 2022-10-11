@@ -1,0 +1,650 @@
+{
+  "unpublishedPage": {
+    "name": "Platform Version Validation",
+    "slug": "platform-version-validation",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 576,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 730,
+          "containerStyle": "none",
+          "snapRows": 73,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 59,
+          "minHeight": 740,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "boxShadow": "none",
+              "widgetName": "Form1",
+              "isCanvas": true,
+              "displayName": "Form",
+              "iconSVG": "/static/media/icon.ea3e08d1.svg",
+              "topRow": 5,
+              "bottomRow": 62,
+              "parentRowSpace": 10,
+              "type": "FORM_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "leftColumn": 4,
+              "children": [
+                {
+                  "boxShadow": "none",
+                  "widgetName": "Canvas1",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 620,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": false,
+                  "hideCard": true,
+                  "minHeight": 400,
+                  "parentColumnSpace": 1,
+                  "leftColumn": 0,
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Text1",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontSize"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "dynamicTriggerPathList": [],
+                      "fontFamily": "System Default",
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Validations",
+                      "key": "usm2me7hwg",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 39,
+                      "textAlign": "LEFT",
+                      "widgetId": "t25dt31w8a",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#03b365",
+                      "version": 1,
+                      "parentId": "94ur7yltwl",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "fontSize": "1.5rem"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Checkbox1",
+                      "displayName": "Checkbox",
+                      "iconSVG": "/static/media/icon.aaab032b.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "parentRowSpace": 10,
+                      "type": "CHECKBOX_WIDGET",
+                      "alignWidget": "LEFT",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 10.6796875,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 40,
+                      "dynamicBindingPathList": [],
+                      "labelPosition": "Right",
+                      "isDisabled": false,
+                      "key": "946o9vanre",
+                      "labelTextSize": "0.875rem",
+                      "isRequired": false,
+                      "rightColumn": 63,
+                      "widgetId": "v62en8pbt6",
+                      "accentColor": "#03B365",
+                      "isVisible": true,
+                      "label": "Platform Version Validation",
+                      "version": 1,
+                      "parentId": "94ur7yltwl",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "defaultCheckedState": false
+                    },
+                    {
+                      "schema": {
+                        "__root_schema__": {
+                          "children": {
+                            "type": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (JSObject1.myFun6()))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "fieldType": "Select",
+                              "sourceData": "PorterClub::Models::Validations::CampaignGroupValidation::PlatformVersionValidation",
+                              "isCustomField": false,
+                              "accessor": "type",
+                              "identifier": "type",
+                              "position": 0,
+                              "originalIdentifier": "type",
+                              "isDisabled": false,
+                              "isFilterable": false,
+                              "isRequired": false,
+                              "isVisible": false,
+                              "label": "Type",
+                              "serverSideFiltering": false,
+                              "options": "[\n  {\n    \"label\": \"Platform Version Validation\",\n    \"value\": \"platformVersionValidation\"\n  }\n]",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "failure_message": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (JSObject1.myFun7()))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "sourceData": "",
+                              "isCustomField": false,
+                              "accessor": "failure_message",
+                              "identifier": "failure_message",
+                              "position": 2,
+                              "originalIdentifier": "failure_message",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Failure Message",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "inverse": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{\n\"label\": \"True\",\n\t\"value\": {{JSObject1.myFun8()}}\n\t}",
+                              "fieldType": "Select",
+                              "sourceData": "false",
+                              "isCustomField": false,
+                              "accessor": "inverse",
+                              "identifier": "inverse",
+                              "position": 3,
+                              "originalIdentifier": "inverse",
+                              "isDisabled": false,
+                              "isFilterable": false,
+                              "isRequired": true,
+                              "isVisible": true,
+                              "label": "Inverse",
+                              "serverSideFiltering": false,
+                              "options": "[\n  {\n    \"label\": \"True\",\n    \"value\": \"true\"\n  },\n  {\n    \"label\": \"False\",\n    \"value\": \"false\"\n  }\n]",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "max_android_version": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (JSObject1.myFun9()))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "isCustomField": false,
+                              "accessor": "max_android_version",
+                              "identifier": "max_android_version",
+                              "position": 4,
+                              "originalIdentifier": "max_android_version",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Max Android Version",
+                              "placeholderText": "",
+                              "regex": "{{((sourceData, formData, fieldState) => (`.[\".\"].`))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "errorMessage": "{{((sourceData, formData, fieldState) => (`Major and minor version are neccessary`))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "min_android_version": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (JSObject1.myFun10()))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "isCustomField": false,
+                              "accessor": "min_android_version",
+                              "identifier": "min_android_version",
+                              "position": 5,
+                              "originalIdentifier": "min_android_version",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Min Android Version",
+                              "placeholderText": "",
+                              "regex": "{{((sourceData, formData, fieldState) => (`.[\".\"].`))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "errorMessage": "{{((sourceData, formData, fieldState) => (`Major and minor version are neccessary`))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "max_ios_version": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (JSObject1.myFun11()))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "isCustomField": false,
+                              "accessor": "max_ios_version",
+                              "identifier": "max_ios_version",
+                              "position": 6,
+                              "originalIdentifier": "max_ios_version",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Max Ios Version",
+                              "placeholderText": "",
+                              "regex": "{{((sourceData, formData, fieldState) => (`.[\".\"].`))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "errorMessage": "{{((sourceData, formData, fieldState) => (`Major and minor version are neccessary`))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "min_ios_version": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (JSObject1.myFun12()))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "fieldType": "Text Input",
+                              "isCustomField": false,
+                              "accessor": "min_ios_version",
+                              "identifier": "min_ios_version",
+                              "position": 7,
+                              "originalIdentifier": "min_ios_version",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Min Ios Version",
+                              "placeholderText": "",
+                              "regex": "{{((sourceData, formData, fieldState) => (`.[\".\"].`))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "errorMessage": "{{((sourceData, formData, fieldState) => (`Major and minor version are neccessary`))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            }
+                          },
+                          "dataType": "object",
+                          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                          "fieldType": "Object",
+                          "sourceData": {
+                            "type": "PorterClub::Models::Validations::CampaignGroupValidation::PlatformVersionValidation",
+                            "failure_message": "",
+                            "inverse": "false"
+                          },
+                          "isCustomField": false,
+                          "accessor": "__root_schema__",
+                          "identifier": "__root_schema__",
+                          "position": -1,
+                          "originalIdentifier": "__root_schema__",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none",
+                          "isDisabled": false,
+                          "isRequired": false,
+                          "isVisible": true,
+                          "labelTextSize": "0.875rem",
+                          "label": ""
+                        }
+                      },
+                      "boxShadow": "none",
+                      "widgetName": "JSONForm1",
+                      "submitButtonStyles": {
+                        "buttonColor": "#FFFFFF",
+                        "buttonVariant": "PRIMARY",
+                        "borderRadius": "0px",
+                        "boxShadow": "none"
+                      },
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.inverse.defaultValue"
+                        },
+                        {
+                          "key": "isVisible"
+                        }
+                      ],
+                      "displayName": "JSON Form",
+                      "iconSVG": "/static/media/icon.6bacf7df.svg",
+                      "topRow": 6,
+                      "bottomRow": 55,
+                      "fieldLimitExceeded": false,
+                      "parentRowSpace": 10,
+                      "title": "Platform Version Validation",
+                      "type": "JSON_FORM_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 10.8759765625,
+                      "dynamicTriggerPathList": [],
+                      "leftColumn": 0,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "schema.__root_schema__.defaultValue"
+                        },
+                        {
+                          "key": "isVisible"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.type.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.failure_message.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.max_android_version.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.min_android_version.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.max_ios_version.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.min_ios_version.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.inverse.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.max_android_version.regex"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.min_android_version.regex"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.max_ios_version.regex"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.min_ios_version.regex"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.max_android_version.errorMessage"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.min_android_version.errorMessage"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.max_ios_version.errorMessage"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.min_ios_version.errorMessage"
+                        },
+                        {
+                          "key": "schema.__root_schema__.borderRadius"
+                        },
+                        {
+                          "key": "schema.__root_schema__.cellBorderRadius"
+                        }
+                      ],
+                      "sourceData": "{\n  \"type\":\"PorterClub::Models::Validations::CampaignGroupValidation::PlatformVersionValidation\",\n         \"failure_message\":\"\",\n         \"inverse\":\"false\",\n         \"max_android_version\":null,\n         \"min_android_version\":null,\n         \"max_ios_version\":null,\n         \"min_ios_version\":null\n}",
+                      "showReset": false,
+                      "resetButtonLabel": "Reset",
+                      "key": "vkhd4c0i2a",
+                      "labelTextSize": "0.875rem",
+                      "backgroundColor": "#fff",
+                      "rightColumn": 63,
+                      "autoGenerateForm": true,
+                      "widgetId": "cbdtd7wsc8",
+                      "resetButtonStyles": {
+                        "buttonColor": "#03B365",
+                        "buttonVariant": "SECONDARY",
+                        "borderRadius": "0px",
+                        "boxShadow": "none"
+                      },
+                      "isVisible": "{{Checkbox1.isChecked}}",
+                      "version": 1,
+                      "parentId": "94ur7yltwl",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "scrollContents": true,
+                      "fixedFooter": true,
+                      "submitButtonLabel": "",
+                      "childStylesheet": {
+                        "ARRAY": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "OBJECT": {
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "CHECKBOX": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        },
+                        "CURRENCY_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "DATEPICKER": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "EMAIL_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTISELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTILINE_TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PASSWORD_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PHONE_NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "RADIO_GROUP": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "SELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "SWITCH": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        }
+                      },
+                      "disabledWhenInvalid": true,
+                      "borderRadius": "0px"
+                    }
+                  ],
+                  "key": "nwlcrbqspk",
+                  "labelTextSize": "0.875rem",
+                  "rightColumn": 301.5,
+                  "detachFromLayout": true,
+                  "widgetId": "94ur7yltwl",
+                  "containerStyle": "none",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "4yyi6xsarx",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "0px"
+                }
+              ],
+              "key": "sp4jssl33r",
+              "labelTextSize": "0.875rem",
+              "backgroundColor": "white",
+              "rightColumn": 61,
+              "widgetId": "4yyi6xsarx",
+              "isVisible": true,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0px"
+            },
+            {
+              "resetFormOnClick": true,
+              "boxShadow": "none",
+              "widgetName": "FormButton1",
+              "onClick": "{{\n\tJSObject1.myFun1();\nnavigateTo('Campaign Form',)\n\n}}}",
+              "buttonColor": "#03B365",
+              "dynamicPropertyPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "displayName": "FormButton",
+              "iconSVG": "/static/media/icon.cca02633.svg",
+              "topRow": 1,
+              "bottomRow": 5,
+              "type": "FORM_BUTTON_WIDGET",
+              "hideCard": true,
+              "animateLoading": true,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 45,
+              "dynamicBindingPathList": [],
+              "text": "Next",
+              "key": "yfpq8ccdqq",
+              "labelTextSize": "0.875rem",
+              "rightColumn": 61,
+              "isDefaultClickDisabled": true,
+              "widgetId": "ba0zmmuz9k",
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "disabledWhenInvalid": true,
+              "borderRadius": "0px",
+              "buttonVariant": "PRIMARY"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "Button1",
+              "onClick": "{{navigateTo('Campaign Group Form', {})}}",
+              "buttonColor": "#03B365",
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca02633.svg",
+              "topRow": 1,
+              "bottomRow": 5,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 10.8759765625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 4,
+              "dynamicBindingPathList": [],
+              "text": "Back",
+              "isDisabled": false,
+              "key": "5icd4j6csb",
+              "labelTextSize": "0.875rem",
+              "rightColumn": 20,
+              "isDefaultClickDisabled": true,
+              "widgetId": "u40avltd84",
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0px",
+              "buttonVariant": "PRIMARY",
+              "placement": "CENTER"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [],
+        "validOnPageLoadActions": true,
+        "id": "Platform Version Validation",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "63074c1e8b81f440510de53b_632c44113d1992799c28457f"
+}

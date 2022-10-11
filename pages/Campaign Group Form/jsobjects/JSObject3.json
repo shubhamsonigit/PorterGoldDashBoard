@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject3",
+    "pageId": "Campaign Group Form",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\tlet i=0;\n\t\tfor(i=0;i<Api3.data.geo_regions.length;i++)\n\t\t{\n\t\t\tif(Api3.data.geo_regions[i].name==Campaign_Group_Form.formData.geo_region_id)\n\t\t\tstoreValue(\"georegion\",Api3.data.geo_regions[i].id);\n\t\t}\n\t},\n\tmyFun2: () => {\n\t\tconst sequence=[1,2,3];\n\t\tstoreValue(\"status\",Campaign_Group_Form.formData.status);\n\t\tstoreValue(\"statustemp\",Campaign_Group_Form.formData.status,false);\n\t\tstoreValue(\"type\",Campaign_Group_Form.formData.type);\n\t\tstoreValue(\"typetemp\",Campaign_Group_Form.formData.type,false);\n\t\t//storeValue(\"computer\",Table1.selectedRow.id);\n\t\tstoreValue(\"computertemp\",Campaign_Group_Form.formData.computer_type,false);\n\t\tstoreValue(\"startDate\",Campaign_Group_Form.formData.start_date);\n\t\tstoreValue(\"startDatetemp\",Campaign_Group_Form.formData.start_date,false);\n\t\tstoreValue(\"endDate\",Campaign_Group_Form.formData.end_date);\n\t\tstoreValue(\"endDatetemp\",Campaign_Group_Form.formData.end_date,false);\n\t\tstoreValue(\"georegiontempp\",Campaign_Group_Form.formData.geo_region_id,false);\n\t\tstoreValue(\"sequence\",sequence);\n\t\t//return appsmith.store.type\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Campaign Group Form_JSObject3",
+  "deleted": false,
+  "gitSyncId": "63074c1e8b81f440510de53b_631995a4d8a8134e4063bcfd"
+}

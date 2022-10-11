@@ -1,0 +1,1281 @@
+{
+  "unpublishedPage": {
+    "name": "Campaign Form",
+    "slug": "campaign-form",
+    "layouts": [
+      {
+        "viewMode": false,
+        "dsl": {
+          "widgetName": "MainContainer",
+          "backgroundColor": "none",
+          "rightColumn": 816,
+          "snapColumns": 64,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "topRow": 0,
+          "bottomRow": 730,
+          "containerStyle": "none",
+          "snapRows": 73,
+          "parentRowSpace": 1,
+          "type": "CANVAS_WIDGET",
+          "canExtend": true,
+          "version": 59,
+          "minHeight": 630,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0,
+          "children": [
+            {
+              "schema": {
+                "__root_schema__": {
+                  "children": {
+                    "Campaigns": {
+                      "children": {
+                        "__array_item__": {
+                          "children": {
+                            "customField1": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "",
+                              "fieldType": "Number Input",
+                              "sourceData": 0,
+                              "isCustomField": true,
+                              "accessor": "valid_for_days",
+                              "identifier": "customField1",
+                              "position": 0,
+                              "originalIdentifier": "customField1",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Valid For Days",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "customField2": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "",
+                              "fieldType": "Number Input",
+                              "sourceData": 0,
+                              "isCustomField": true,
+                              "accessor": "joining_fee_in_paise",
+                              "identifier": "customField2",
+                              "position": 0,
+                              "originalIdentifier": "customField2",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Joining Fee In Paise",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "customField3": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Datepicker",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "start_date",
+                              "identifier": "customField3",
+                              "position": 0,
+                              "originalIdentifier": "customField3",
+                              "closeOnSelection": false,
+                              "convertToISO": false,
+                              "dateFormat": "YYYY-MM-DD HH:mm",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isVisible": true,
+                              "label": "Start Date",
+                              "maxDate": "2121-12-31T18:29:00.000Z",
+                              "minDate": "1920-12-31T18:30:00.000Z",
+                              "shortcuts": false,
+                              "timePrecision": "minute",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "customField4": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Datepicker",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "end_date",
+                              "identifier": "customField4",
+                              "position": 0,
+                              "originalIdentifier": "customField4",
+                              "closeOnSelection": false,
+                              "convertToISO": false,
+                              "dateFormat": "YYYY-MM-DD HH:mm",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isVisible": true,
+                              "label": "End Date",
+                              "maxDate": "2121-12-31T18:29:00.000Z",
+                              "minDate": "{{((sourceData, formData, fieldState) => (appsmith.store.startDate))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "shortcuts": false,
+                              "timePrecision": "minute",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "customField5": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "",
+                              "fieldType": "Radio Group",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "status",
+                              "identifier": "customField5",
+                              "position": 0,
+                              "originalIdentifier": "customField5",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isVisible": true,
+                              "label": "Status",
+                              "options": "{{ Api7.data.campaign_group_status.map((row) => {\n      return { label: row, value: row}\n   })\n}}",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "customField6": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "",
+                              "fieldType": "Number Input",
+                              "sourceData": 0,
+                              "isCustomField": true,
+                              "accessor": "applicable_order_count",
+                              "identifier": "customField6",
+                              "position": 0,
+                              "originalIdentifier": "customField6",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Applicable Order Count",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "customField7": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "package_name",
+                              "identifier": "customField7",
+                              "position": 0,
+                              "originalIdentifier": "customField7",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Package Name",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "customField8": {
+                              "children": {},
+                              "dataType": "string",
+                              "fieldType": "Text Input",
+                              "sourceData": "",
+                              "isCustomField": true,
+                              "accessor": "excluded_vehicle_message",
+                              "identifier": "customField8",
+                              "position": 0,
+                              "originalIdentifier": "customField8",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Excluded Vehicle Message",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (null))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "customField9": {
+                              "children": {},
+                              "dataType": "array",
+                              "defaultValue": "",
+                              "fieldType": "Multiselect",
+                              "sourceData": [],
+                              "isCustomField": true,
+                              "accessor": "excluded_vehicle_categories",
+                              "identifier": "customField9",
+                              "position": 0,
+                              "originalIdentifier": "customField9",
+                              "isDisabled": false,
+                              "isFilterable": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "label": "Excluded Vehicle Categories",
+                              "serverSideFiltering": false,
+                              "options": "{{ Api4.data.map((row) => {\n      return { label: row, value: row }\n   })\n}}",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            }
+                          },
+                          "dataType": "undefined",
+                          "fieldType": "Object",
+                          "isCustomField": false,
+                          "accessor": "__array_item__",
+                          "identifier": "__array_item__",
+                          "position": -1,
+                          "originalIdentifier": "__array_item__",
+                          "isDisabled": false,
+                          "isRequired": false,
+                          "isVisible": true,
+                          "label": "Campaigns",
+                          "labelTextSize": "0.875rem",
+                          "borderRadius": "0px",
+                          "cellBorderRadius": "0px",
+                          "boxShadow": "none",
+                          "cellBoxShadow": "none",
+                          "accentColor": "#03B365"
+                        }
+                      },
+                      "dataType": "array",
+                      "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.Campaigns))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                      "fieldType": "Array",
+                      "sourceData": [],
+                      "isCustomField": false,
+                      "accessor": "Campaigns",
+                      "identifier": "Campaigns",
+                      "position": 0,
+                      "originalIdentifier": "Campaigns",
+                      "backgroundColor": "#FAFAFA",
+                      "isCollapsible": true,
+                      "isDisabled": false,
+                      "isRequired": false,
+                      "isVisible": true,
+                      "label": "Campaigns",
+                      "labelTextSize": "0.875rem",
+                      "borderRadius": "0px",
+                      "cellBorderRadius": "0px",
+                      "boxShadow": "none",
+                      "cellBoxShadow": "none",
+                      "accentColor": "#03B365"
+                    }
+                  },
+                  "dataType": "object",
+                  "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(JSONForm1.sourceData, JSONForm1.formData, JSONForm1.fieldState)}}",
+                  "fieldType": "Object",
+                  "sourceData": {
+                    "Campaigns": []
+                  },
+                  "isCustomField": false,
+                  "accessor": "__root_schema__",
+                  "identifier": "__root_schema__",
+                  "position": -1,
+                  "originalIdentifier": "__root_schema__",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none",
+                  "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "cellBoxShadow": "none",
+                  "isDisabled": false,
+                  "isRequired": false,
+                  "isVisible": true,
+                  "labelTextSize": "0.875rem",
+                  "label": ""
+                }
+              },
+              "boxShadow": "none",
+              "widgetName": "JSONForm1",
+              "submitButtonStyles": {
+                "buttonColor": "#03B365",
+                "buttonVariant": "PRIMARY",
+                "borderRadius": "0px",
+                "boxShadow": "none"
+              },
+              "dynamicPropertyPathList": [
+                {
+                  "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.start_date.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.end_date.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Campaign_1.children.start_date.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Campaign_1.children.end_date.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Campaign_2.children.start_date.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Campaign_2.children.end_date.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Campaign_3.children.start_date.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Campaign_3.children.end_date.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.user.children.enableTelemetry.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.user.children.accountNonExpired.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.user.children.accountNonLocked.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.user.children.credentialsNonExpired.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.user.children.emptyInstance.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.user.children.isAnonymous.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.user.children.isEnabled.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.user.children.isSuperUser.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.user.children.isConfigurable.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.geolocation.children.canBeRequested.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.meta.children.myFun1.children.isAsync.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.meta.children.myFun1.children.confirmBeforeExecute.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.meta.children.myFun2.children.isAsync.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.meta.children.myFun2.children.confirmBeforeExecute.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.editable.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.readOnly.defaultValue"
+                },
+                {
+                  "key": "onSubmit"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Campaigns.children.__array_item__.children.customField4.minDate"
+                }
+              ],
+              "displayName": "JSON Form",
+              "iconSVG": "/static/media/icon.6bacf7df.svg",
+              "onSubmit": "{{appsmith.store.computer;\n\nif(JSONForm1.formData.Campaigns.length>0 && JSONForm1.formData.Campaigns.length<4 && JSONForm1.formData.Campaigns[0].status!=\"\"){\nawait JSObject4.myFun1();\n\tnavigateTo('Campaign Groups');\n}\nif(JSONForm1.formData.Campaigns.length==0 || ((JSONForm1.formData.Campaigns.length==1) && JSONForm1.formData.Campaigns[0].status==\"\"))\n\tshowAlert(\"Minimum one campaign is neccessary\", 'error')\n\nif(JSONForm1.formData.Campaigns.length>3)\n   showAlert(\"A maximum of three campaigns can be added.\", 'error')\n\n}}",
+              "topRow": 5,
+              "bottomRow": 66,
+              "fieldLimitExceeded": false,
+              "parentRowSpace": 10,
+              "title": "Campaigns",
+              "type": "JSON_FORM_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onSubmit"
+                }
+              ],
+              "leftColumn": 6,
+              "dynamicBindingPathList": [
+                {
+                  "key": "sourceData"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Campaigns.children.__array_item__.children.customField9.options"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Campaigns.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Campaigns.children.__array_item__.children.customField5.options"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Campaigns.children.__array_item__.children.customField8.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.defaultValue"
+                },
+                {
+                  "key": "schema.__root_schema__.children.Campaigns.children.__array_item__.children.customField4.minDate"
+                },
+                {
+                  "key": "schema.__root_schema__.borderRadius"
+                },
+                {
+                  "key": "schema.__root_schema__.cellBorderRadius"
+                }
+              ],
+              "sourceData": "{\n\"Campaigns\":{{Array()}}\n}",
+              "showReset": true,
+              "resetButtonLabel": "Reset",
+              "key": "zcwu855m7p",
+              "labelTextSize": "0.875rem",
+              "backgroundColor": "#fff",
+              "rightColumn": 59,
+              "autoGenerateForm": true,
+              "widgetId": "byxde3jvpx",
+              "resetButtonStyles": {
+                "buttonColor": "#03B365",
+                "buttonVariant": "SECONDARY",
+                "borderRadius": "0px",
+                "boxShadow": "none"
+              },
+              "isVisible": true,
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "scrollContents": true,
+              "fixedFooter": true,
+              "submitButtonLabel": "Submit",
+              "childStylesheet": {
+                "ARRAY": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none",
+                  "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "cellBoxShadow": "none"
+                },
+                "OBJECT": {
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none",
+                  "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "cellBoxShadow": "none"
+                },
+                "CHECKBOX": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                },
+                "CURRENCY_INPUT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "DATEPICKER": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "EMAIL_INPUT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "MULTISELECT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "MULTILINE_TEXT_INPUT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "NUMBER_INPUT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "PASSWORD_INPUT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "PHONE_NUMBER_INPUT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "RADIO_GROUP": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "boxShadow": "none"
+                },
+                "SELECT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                },
+                "SWITCH": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "boxShadow": "none"
+                },
+                "TEXT_INPUT": {
+                  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                  "boxShadow": "none"
+                }
+              },
+              "disabledWhenInvalid": true,
+              "borderRadius": "0px"
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "Modal1",
+              "isCanvas": true,
+              "displayName": "Modal",
+              "iconSVG": "/static/media/icon.4975978e.svg",
+              "topRow": 0,
+              "bottomRow": 0,
+              "parentRowSpace": 1,
+              "type": "MODAL_WIDGET",
+              "hideCard": false,
+              "shouldScrollContents": true,
+              "animateLoading": true,
+              "parentColumnSpace": 1,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 0,
+              "dynamicBindingPathList": [],
+              "children": [
+                {
+                  "boxShadow": "none",
+                  "widgetName": "Canvas1",
+                  "displayName": "Canvas",
+                  "topRow": 0,
+                  "bottomRow": 560,
+                  "parentRowSpace": 1,
+                  "type": "CANVAS_WIDGET",
+                  "canExtend": true,
+                  "hideCard": true,
+                  "shouldScrollContents": false,
+                  "minHeight": 550,
+                  "parentColumnSpace": 1,
+                  "dynamicTriggerPathList": [],
+                  "leftColumn": 0,
+                  "dynamicBindingPathList": [],
+                  "children": [
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "IconButton1",
+                      "onClick": "{{closeModal('Modal1');\nresetWidget('JSONForm2')}}",
+                      "buttonColor": "#2E3D49",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "displayName": "Icon Button",
+                      "iconSVG": "/static/media/icon.1a0c634a.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "type": "ICON_BUTTON_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
+                      "leftColumn": 56,
+                      "dynamicBindingPathList": [],
+                      "iconSize": 24,
+                      "isDisabled": false,
+                      "key": "cpl94sx9pi",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 64,
+                      "iconName": "cross",
+                      "widgetId": "csn84rgazg",
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "9h3oho6d3k",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "buttonVariant": "TERTIARY"
+                    },
+                    {
+                      "boxShadow": "none",
+                      "widgetName": "Text1",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "fontSize"
+                        }
+                      ],
+                      "displayName": "Text",
+                      "iconSVG": "/static/media/icon.97c59b52.svg",
+                      "topRow": 1,
+                      "bottomRow": 5,
+                      "type": "TEXT_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "overflow": "NONE",
+                      "dynamicTriggerPathList": [],
+                      "fontFamily": "System Default",
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [],
+                      "shouldTruncate": false,
+                      "truncateButtonColor": "#FFC13D",
+                      "text": "Campaign Form",
+                      "key": "f5hn5h6uzi",
+                      "labelTextSize": "0.875rem",
+                      "rightColumn": 41,
+                      "textAlign": "LEFT",
+                      "widgetId": "0thq4jkclw",
+                      "isVisible": true,
+                      "fontStyle": "BOLD",
+                      "textColor": "#231F20",
+                      "version": 1,
+                      "parentId": "9h3oho6d3k",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "borderRadius": "0px",
+                      "fontSize": "1.5rem"
+                    },
+                    {
+                      "schema": {
+                        "__root_schema__": {
+                          "children": {
+                            "valid_for_days": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "",
+                              "fieldType": "Number Input",
+                              "sourceData": 30,
+                              "isCustomField": false,
+                              "accessor": "valid_for_days",
+                              "identifier": "valid_for_days",
+                              "position": 1,
+                              "originalIdentifier": "valid_for_days",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Valid For Days",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "joining_fee_in_paise": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "",
+                              "fieldType": "Number Input",
+                              "sourceData": 15000,
+                              "isCustomField": false,
+                              "accessor": "joining_fee_in_paise",
+                              "identifier": "joining_fee_in_paise",
+                              "position": 2,
+                              "originalIdentifier": "joining_fee_in_paise",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Joining Fee In Paise",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "start_date": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "",
+                              "fieldType": "Datepicker",
+                              "sourceData": "2022-07-27 18:30:00",
+                              "isCustomField": false,
+                              "accessor": "start_date",
+                              "identifier": "start_date",
+                              "position": 3,
+                              "originalIdentifier": "start_date",
+                              "closeOnSelection": false,
+                              "convertToISO": false,
+                              "dateFormat": "YYYY-MM-DD HH:mm",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isVisible": true,
+                              "label": "Start Date",
+                              "maxDate": "2121-12-31T18:29:00.000Z",
+                              "minDate": "1920-12-31T18:30:00.000Z",
+                              "shortcuts": false,
+                              "timePrecision": "minute",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "end_date": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "",
+                              "fieldType": "Datepicker",
+                              "sourceData": "2023-07-27 18:30:00",
+                              "isCustomField": false,
+                              "accessor": "end_date",
+                              "identifier": "end_date",
+                              "position": 4,
+                              "originalIdentifier": "end_date",
+                              "closeOnSelection": false,
+                              "convertToISO": false,
+                              "dateFormat": "YYYY-MM-DD HH:mm",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isVisible": true,
+                              "label": "End Date",
+                              "maxDate": "2121-12-31T18:29:00.000Z",
+                              "minDate": "1920-12-31T18:30:00.000Z",
+                              "shortcuts": false,
+                              "timePrecision": "minute",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "status": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "",
+                              "fieldType": "Select",
+                              "sourceData": 0,
+                              "isCustomField": false,
+                              "accessor": "status",
+                              "identifier": "status",
+                              "position": 5,
+                              "originalIdentifier": "status",
+                              "isDisabled": false,
+                              "isFilterable": false,
+                              "isRequired": true,
+                              "isVisible": true,
+                              "label": "Status",
+                              "serverSideFiltering": false,
+                              "options": "{{ Api7.data.campaign_group_status.map((row) => { \n      return { label: row, value: row} \n   }) \n}}",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "applicable_order_count": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "",
+                              "fieldType": "Number Input",
+                              "sourceData": 10,
+                              "isCustomField": false,
+                              "accessor": "applicable_order_count",
+                              "identifier": "applicable_order_count",
+                              "position": 6,
+                              "originalIdentifier": "applicable_order_count",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Applicable Order Count",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "campaign_group_id": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.URL.queryParams.campaignid))(JSONForm2.sourceData, JSONForm2.formData, JSONForm2.fieldState)}}",
+                              "fieldType": "Number Input",
+                              "sourceData": 1,
+                              "isCustomField": false,
+                              "accessor": "campaign_group_id",
+                              "identifier": "campaign_group_id",
+                              "position": 7,
+                              "originalIdentifier": "campaign_group_id",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "label": "Campaign Group Id",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "package_name": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "",
+                              "fieldType": "Text Input",
+                              "sourceData": "Default P",
+                              "isCustomField": false,
+                              "accessor": "package_name",
+                              "identifier": "package_name",
+                              "position": 8,
+                              "originalIdentifier": "package_name",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Package Name",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "package_sequence": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "",
+                              "fieldType": "Select",
+                              "sourceData": 0,
+                              "isCustomField": false,
+                              "accessor": "package_sequence",
+                              "identifier": "package_sequence",
+                              "position": 9,
+                              "originalIdentifier": "package_sequence",
+                              "isDisabled": false,
+                              "isFilterable": false,
+                              "isRequired": false,
+                              "isVisible": true,
+                              "label": "Package Sequence",
+                              "serverSideFiltering": false,
+                              "options": "{{appsmith.store.sequence.map((row) => { \n      return { label: row, value: row} \n   }) \n}}",
+                              "onOptionChange": "",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "excluded_vehicle_message": {
+                              "children": {},
+                              "dataType": "string",
+                              "defaultValue": "",
+                              "fieldType": "Text Input",
+                              "sourceData": "Not applicable on 2 wheeler orders",
+                              "isCustomField": false,
+                              "accessor": "excluded_vehicle_message",
+                              "identifier": "excluded_vehicle_message",
+                              "position": 10,
+                              "originalIdentifier": "excluded_vehicle_message",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": true,
+                              "isSpellCheck": false,
+                              "isVisible": true,
+                              "label": "Excluded Vehicle Message",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "excluded_vehicle_categories": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "",
+                              "fieldType": "Multiselect",
+                              "sourceData": 4,
+                              "isCustomField": false,
+                              "accessor": "excluded_vehicle_categories",
+                              "identifier": "excluded_vehicle_categories",
+                              "position": 11,
+                              "originalIdentifier": "excluded_vehicle_categories",
+                              "isDisabled": false,
+                              "isFilterable": false,
+                              "isRequired": true,
+                              "isVisible": true,
+                              "label": "Excluded Vehicle Categories",
+                              "serverSideFiltering": false,
+                              "options": "{{ Api4.data.map((row) => { \n      return { label: row, value: row } \n   }) \n}}",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            },
+                            "computer_id": {
+                              "children": {},
+                              "dataType": "number",
+                              "defaultValue": "{{((sourceData, formData, fieldState) => (appsmith.URL.queryParams.computer))(JSONForm2.sourceData, JSONForm2.formData, JSONForm2.fieldState)}}",
+                              "fieldType": "Number Input",
+                              "sourceData": 1,
+                              "isCustomField": false,
+                              "accessor": "computer_id",
+                              "identifier": "computer_id",
+                              "position": 12,
+                              "originalIdentifier": "computer_id",
+                              "iconAlign": "left",
+                              "isDisabled": false,
+                              "isRequired": false,
+                              "isSpellCheck": false,
+                              "isVisible": false,
+                              "label": "Computer Id",
+                              "labelTextSize": "0.875rem",
+                              "borderRadius": "0px",
+                              "cellBorderRadius": "0px",
+                              "boxShadow": "none",
+                              "cellBoxShadow": "none",
+                              "accentColor": "#03B365"
+                            }
+                          },
+                          "dataType": "object",
+                          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData))(JSONForm2.sourceData, JSONForm2.formData, JSONForm2.fieldState)}}",
+                          "fieldType": "Object",
+                          "sourceData": {
+                            "valid_for_days": 30,
+                            "joining_fee_in_paise": 15000,
+                            "start_date": "2022-07-27 18:30:00",
+                            "end_date": "2023-07-27 18:30:00",
+                            "status": 0,
+                            "applicable_order_count": 10,
+                            "campaign_group_id": 1,
+                            "package_name": "Default P",
+                            "package_sequence": 0,
+                            "excluded_vehicle_message": "Not applicable on 2 wheeler orders",
+                            "excluded_vehicle_categories": 4,
+                            "computer_id": 1
+                          },
+                          "isCustomField": false,
+                          "accessor": "__root_schema__",
+                          "identifier": "__root_schema__",
+                          "position": -1,
+                          "originalIdentifier": "__root_schema__",
+                          "isDisabled": false,
+                          "isRequired": false,
+                          "isVisible": true,
+                          "label": "",
+                          "labelTextSize": "0.875rem",
+                          "borderRadius": "0px",
+                          "cellBorderRadius": "0px",
+                          "boxShadow": "none",
+                          "cellBoxShadow": "none",
+                          "accentColor": "#03B365"
+                        }
+                      },
+                      "boxShadow": "none",
+                      "widgetName": "JSONForm2",
+                      "submitButtonStyles": {
+                        "buttonColor": "#03B365",
+                        "buttonVariant": "PRIMARY",
+                        "borderRadius": "0px",
+                        "boxShadow": "none"
+                      },
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "schema.__root_schema__.children.date_of_birth.defaultValue"
+                        },
+                        {
+                          "key": "onSubmit"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.start_date.defaultValue"
+                        }
+                      ],
+                      "displayName": "JSON Form",
+                      "iconSVG": "/static/media/icon.6bacf7df.svg",
+                      "onSubmit": "{{JSObject1.myFun1(JSONForm2.formData);JSObject1.myFun2();closeModal('Modal1');resetWidget(\"JSONForm2\")}}",
+                      "topRow": 6,
+                      "bottomRow": 54,
+                      "fieldLimitExceeded": false,
+                      "parentRowSpace": 10,
+                      "title": "",
+                      "type": "JSON_FORM_WIDGET",
+                      "hideCard": false,
+                      "animateLoading": true,
+                      "parentColumnSpace": 6.9375,
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onSubmit"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.package_sequence.onOptionChange"
+                        }
+                      ],
+                      "leftColumn": 1,
+                      "dynamicBindingPathList": [
+                        {
+                          "key": "schema.__root_schema__.children.computer_id.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.excluded_vehicle_categories.options"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.package_sequence.options"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.campaign_group_id.defaultValue"
+                        },
+                        {
+                          "key": "schema.__root_schema__.children.status.options"
+                        }
+                      ],
+                      "sourceData": "{\n  \n       \"valid_for_days\":30,\n       \"joining_fee_in_paise\":15000,\n       \"start_date\":\"2022-07-27 18:30:00\",\n       \"end_date\":\"2023-07-27 18:30:00\",\n       \"status\":0,\n       \"applicable_order_count\":10,\n\"campaign_group_id\":1,\n \n       \"package_name\":\"Default P\",\n       \"package_sequence\":0,\n       \"excluded_vehicle_message\":\"Not applicable on 2 wheeler orders\",\n\"excluded_vehicle_categories\":4,\n\"computer_id\":1\n}",
+                      "showReset": false,
+                      "resetButtonLabel": "Reset",
+                      "key": "zcwu855m7p",
+                      "labelTextSize": "0.875rem",
+                      "backgroundColor": "#fff",
+                      "rightColumn": 63,
+                      "autoGenerateForm": true,
+                      "widgetId": "nfwxsyisam",
+                      "resetButtonStyles": {
+                        "buttonColor": "#03B365",
+                        "buttonVariant": "SECONDARY",
+                        "borderRadius": "0px",
+                        "boxShadow": "none"
+                      },
+                      "isVisible": true,
+                      "version": 1,
+                      "parentId": "9h3oho6d3k",
+                      "renderMode": "CANVAS",
+                      "isLoading": false,
+                      "scrollContents": true,
+                      "fixedFooter": true,
+                      "submitButtonLabel": "Submit",
+                      "childStylesheet": {
+                        "ARRAY": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "OBJECT": {
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none",
+                          "cellBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "cellBoxShadow": "none"
+                        },
+                        "CHECKBOX": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}"
+                        },
+                        "CURRENCY_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "DATEPICKER": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "EMAIL_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTISELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "MULTILINE_TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PASSWORD_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "PHONE_NUMBER_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "RADIO_GROUP": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "SELECT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        },
+                        "SWITCH": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "boxShadow": "none"
+                        },
+                        "TEXT_INPUT": {
+                          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                          "boxShadow": "none"
+                        }
+                      },
+                      "disabledWhenInvalid": true,
+                      "borderRadius": "0px"
+                    }
+                  ],
+                  "isDisabled": false,
+                  "key": "e4qgwc327j",
+                  "labelTextSize": "0.875rem",
+                  "rightColumn": 0,
+                  "detachFromLayout": true,
+                  "widgetId": "9h3oho6d3k",
+                  "isVisible": true,
+                  "version": 1,
+                  "parentId": "csnltewec6",
+                  "renderMode": "CANVAS",
+                  "isLoading": false,
+                  "borderRadius": "0px"
+                }
+              ],
+              "key": "eacwvz08wi",
+              "height": 550,
+              "labelTextSize": "0.875rem",
+              "rightColumn": 0,
+              "detachFromLayout": true,
+              "widgetId": "csnltewec6",
+              "canOutsideClickClose": true,
+              "canEscapeKeyClose": true,
+              "version": 2,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0px",
+              "width": 456
+            },
+            {
+              "boxShadow": "none",
+              "widgetName": "Button5",
+              "onClick": "{{navigateTo('Page1', {})}}",
+              "buttonColor": "#03B365",
+              "displayName": "Button",
+              "iconSVG": "/static/media/icon.cca02633.svg",
+              "topRow": 1,
+              "bottomRow": 5,
+              "parentRowSpace": 10,
+              "type": "BUTTON_WIDGET",
+              "hideCard": false,
+              "animateLoading": true,
+              "parentColumnSpace": 12.5625,
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
+              "leftColumn": 6,
+              "dynamicBindingPathList": [],
+              "text": "Back",
+              "isDisabled": false,
+              "key": "cgz9230uaf",
+              "labelTextSize": "0.875rem",
+              "rightColumn": 22,
+              "isDefaultClickDisabled": true,
+              "widgetId": "yntyjzkjcl",
+              "isVisible": true,
+              "recaptchaType": "V3",
+              "version": 1,
+              "parentId": "0",
+              "renderMode": "CANVAS",
+              "isLoading": false,
+              "borderRadius": "0px",
+              "buttonVariant": "PRIMARY",
+              "placement": "CENTER"
+            }
+          ]
+        },
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "Campaign Form_Api4",
+              "name": "Api4",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Campaign Form_Api7",
+              "name": "Api7",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
+        "validOnPageLoadActions": true,
+        "id": "Campaign Form",
+        "deleted": false,
+        "policies": [],
+        "userPermissions": []
+      }
+    ],
+    "userPermissions": [],
+    "policies": [],
+    "isHidden": false
+  },
+  "deleted": false,
+  "gitSyncId": "63074c1e8b81f440510de53b_630de1d88b81f440510de5f8"
+}

@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject6",
+    "pageId": "Campaign Group Form",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1:  () => {\n  const campaign_group_status = [Api5.data.campaign_group_status[1],Api5.data.campaign_group_status[2]];\n\t\treturn campaign_group_status;\n\t\t\t\n\t},\n\tmyFun2:  () => {\n  const campaign_group_type = [Api4.data[0],Api4.data[1]];\n\t\treturn campaign_group_type;\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Campaign Group Form_JSObject6",
+  "deleted": false,
+  "gitSyncId": "63074c1e8b81f440510de53b_6322be483d1992799c2842b7"
+}

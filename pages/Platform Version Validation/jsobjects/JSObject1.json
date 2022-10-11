@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Platform Version Validation",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\t  storeValue(\"v_type\",JSONForm1.formData.type);\n\t\t\n\t\tif(JSONForm1.formData.failure_message!=\"\")\n\t\t  storeValue(\"failure_message\",JSONForm1.formData.failure_message);\n\t\telse\n\t\t\tstoreValue(\"failure_message\",null);\n\t\t\n\t\t\n\t\t  storeValue(\"inverse\",JSONForm1.formData.inverse);\n\t\tif(JSONForm1.formData.max_android_version!=\"\")\n\t\t  storeValue(\"max_android_version\",JSONForm1.formData.max_android_version);\n\t\telse\n\t\t\tstoreValue(\"max_android_version\",null);\n\t\t\n\t\tif(JSONForm1.formData.min_android_version!=\"\")\n\t\t  storeValue(\"min_android_version\",JSONForm1.formData.min_android_version);\n\t\telse\n\t\t\tstoreValue(\"min_android_version\",null);\n\n\t\tif(JSONForm1.formData.max_ios_version!=\"\")\n\t\t  storeValue(\"max_ios_version\",JSONForm1.formData.max_ios_version);\n\t\telse\n\t\t\tstoreValue(\"max_ios_version\",null);\n\t\t\n\t\tif(JSONForm1.formData.min_ios_version!=\"\")\n\t\t  storeValue(\"min_ios_version\",JSONForm1.formData.min_ios_version);\n\t\telse\n\t\t\tstoreValue(\"min_ios_version\",null);\n\t\t\n\t\t  if(Checkbox1.isChecked)\n\t\t  storeValue(\"flage\",1,false);\n\t\t  else\n\t\t\tstoreValue(\"flage\",0,false)\n\t\t\n\t\t  storeValue(\"v_type_temp\",JSONForm1.formData.type,false);\n\t\t  storeValue(\"failure_message_temp\",JSONForm1.formData.failure_message,false);\n\t\t  storeValue(\"inverse_temp\",JSONForm1.formData.inverse,false);\n\t\t  storeValue(\"max_android_version_temp\",JSONForm1.formData.max_android_version,false);\n\t\t  storeValue(\"min_android_version_temp\",JSONForm1.formData.min_android_version,false);\n\t\t  storeValue(\"max_ios_version_temp\",JSONForm1.formData.max_ios_version,false);\n\t\t  storeValue(\"min_ios_version_temp\",JSONForm1.formData.min_ios_version,false);\n\t},\n\t\tmyFun6: () => {\n\t\tif(appsmith.store.v_type_temp!=null)\n\t\t\t\treturn appsmith.store.v_type_temp;\n\t\t  else\n\t\t\t\treturn \"\";\n\t},\n\tmyFun7: () => {\n\t\tif(appsmith.store.failure_message_temp!=null)\n\t\t\t  return appsmith.store.failure_message_temp;\n\t\t else\n\t\t\t\treturn \"\";\n\t},\n\t\tmyFun8: () => {\n\t\tif(appsmith.store.inverse_temp!=null)\n\t\t\t\treturn appsmith.store.inverse_temp;\n\t\t  else\n\t\t\t\treturn \"\";\n\t},\n\t\tmyFun9: () => {\n\t\tif(appsmith.store.max_android_version_temp!=null)\n\t\t\t\treturn appsmith.store.max_android_version_temp;\n\t\t  else\n\t\t\t\treturn \"\";\n\t},\n\t\tmyFun10: () => {\n\t\tif(appsmith.store.min_android_version_temp!=null)\n\t\t\t\treturn appsmith.store.min_android_version_temp;\n\t\t  else\n\t\t\t\treturn \"\";\n\t},\n\t\tmyFun11: () => {\n\t\tif(appsmith.store.max_ios_version_temp!=null)\n\t\t\t\treturn appsmith.store.max_ios_version_temp;\n\t\t  else\n\t\t\t\treturn \"\";\n\t},\n\t\tmyFun12: () => {\n\t\tif(appsmith.store.min_ios_version_temp!=null)\n\t\t\t\treturn appsmith.store.min_ios_version_temp;\n\t\t  else\n\t\t\t\treturn \"\";\n\t}\n\t\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Platform Version Validation_JSObject1",
+  "deleted": false,
+  "gitSyncId": "63074c1e8b81f440510de53b_632c4b013d1992799c284588"
+}

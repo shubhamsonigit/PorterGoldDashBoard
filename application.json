@@ -1,0 +1,37 @@
+{
+  "pages": [
+    {
+      "id": "Campaign Groups",
+      "isDefault": true
+    },
+    {
+      "id": "Update Campaign Group Status",
+      "isDefault": false
+    },
+    {
+      "id": "Create Computer",
+      "isDefault": false
+    },
+    {
+      "id": "Campaign Group Form",
+      "isDefault": false
+    },
+    {
+      "id": "Campaign Form",
+      "isDefault": false
+    },
+    {
+      "id": "Platform Version Validation",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#C7F3E3",
+  "icon": "dollar",
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "isManualUpdate": false,
+  "deleted": false
+}

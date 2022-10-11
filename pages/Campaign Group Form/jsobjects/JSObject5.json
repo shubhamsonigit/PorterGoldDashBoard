@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject5",
+    "pageId": "Campaign Group Form",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\n\t},\n\tmyFun2: () => {\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Campaign Group Form_JSObject5",
+  "deleted": false,
+  "gitSyncId": "63074c1e8b81f440510de53b_631d870dd8a8134e4063bd6e"
+}

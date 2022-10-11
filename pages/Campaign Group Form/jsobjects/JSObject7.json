@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject7",
+    "pageId": "Campaign Group Form",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\tif(Campaign_Group_Form.formData.start_date>Date())\n    return Campaign_Group_Form.formData.start_date\n\t\telse\n\t\t\treturn Date()\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Campaign Group Form_JSObject7",
+  "deleted": false,
+  "gitSyncId": "63074c1e8b81f440510de53b_6336ae3e56305a3377451569"
+}

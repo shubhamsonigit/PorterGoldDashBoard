@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject4",
+    "pageId": "Campaign Group Form",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\t\tif(appsmith.store.computertemp!=null)\n\t\t\t\treturn appsmith.store.computertemp;\n\t},\n\tmyFun2: () => {\n\t\tif(appsmith.store.georegiontempp!=null)\n\t\t\t\treturn appsmith.store.georegiontempp;\n\t},\n\tmyFun3: () => {\n\t\tif(appsmith.store.startDatetemp!=null)\n\t\t\t\treturn appsmith.store.startDatetemp;\n\t\t  else\n\t\t\t\treturn \"\";\n\t},\n\tmyFun4: () => {\n\t\tif(appsmith.store.endDatetemp!=null)\n\t\t\t\treturn appsmith.store.endDatetemp;\n\t\t  else\n\t\t\t\treturn \"\";\n\t},\n\tmyFun5: () => {\n\t\tif(appsmith.store.typetemp!=null)\n\t\t\t\treturn appsmith.store.typetemp;\n\t\t  else\n\t\t\t\treturn \"\";\n\t},\n\tmyFun6: () => {\n\t\tif(appsmith.store.statustemp!=null)\n\t\t\t\treturn appsmith.store.statustemp;\n\t\t  else\n\t\t\t\treturn \"\";\n\t},\n\tmyFun7: () => {\n\t\tif(appsmith.store.failure_message_temp!=null)\n\t\t\t\treturn appsmith.failure_message_temp;\n\t\t  else\n\t\t\t\treturn \"\";\n\t},\n\t\tmyFun8: () => {\n\t\tif(appsmith.store.inverse_temp!=null)\n\t\t\t\treturn appsmith.inverse_temp;\n\t\t  else\n\t\t\t\treturn \"\";\n\t},\n\t\tmyFun9: () => {\n\t\tif(appsmith.store.max_android_version_temp!=null)\n\t\t\t\treturn appsmith.max_android_version_temp;\n\t\t  else\n\t\t\t\treturn \"\";\n\t},\n\t\tmyFun10: () => {\n\t\tif(appsmith.store.min_android_version_temp!=null)\n\t\t\t\treturn appsmith.min_android_version_temp;\n\t\t  else\n\t\t\t\treturn \"\";\n\t},\n\t\tmyFun11: () => {\n\t\tif(appsmith.store.max_ios_version_temp!=null)\n\t\t\t\treturn appsmith.max_ios_version_temp;\n\t\t  else\n\t\t\t\treturn \"\";\n\t},\n\t\tmyFun12: () => {\n\t\tif(appsmith.store.min_ios_version_temp!=null)\n\t\t\t\treturn appsmith.min_ios_version_temp;\n\t\t  else\n\t\t\t\treturn \"\";\n\t}\n\t\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Campaign Group Form_JSObject4",
+  "deleted": false,
+  "gitSyncId": "63074c1e8b81f440510de53b_631d861ad8a8134e4063bd68"
+}

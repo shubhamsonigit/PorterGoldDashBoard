@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject5",
+    "pageId": "Campaign Groups",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: (id, data) => {\n\t\t//write code here\n\t\tvar reg_name;\n\t\tdata.map(\n\t\tx=>{\n\t\t\tif(x.id == id){\n\t\t\t\treg_name = x.name;\n\t\t\t}\n\t\t}\n\t\t)\n\t\treturn reg_name\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Campaign Groups_JSObject5",
+  "deleted": false,
+  "gitSyncId": "63074c1e8b81f440510de53b_6316fb8ad8a8134e4063bc53"
+}

@@ -1,0 +1,24 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Campaign Group Form",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyVar1: [],\n\tmyVar2: {},\n\tmyFun1: () => {\n\t\tvar id= Table1.selectedRow.id;\n\t\tvar type=Table1.selectedRow.type;\n\t\tvar flat_amount=Table1.selectedRow.flat_amount;\n\t\tvar percentage=Table1.selectedRow.percentage;\n\t\tvar max_discount=Table1.selectedRow.max_allowed_discount;\n\t\t\n\t\tvar flat_amount_p;\n\t\tvar percentage_p;\n\t\tvar max_discount_p;\n\t\tvar final_str=\"\";\n\t\t\n\t\tif(flat_amount!=null)\n\t\t\tfinal_str=final_str+\" Flat amount: \"+flat_amount;\n\t\tif(percentage!=null)\n\t\t\tfinal_str=final_str+\" Percentage Amount: \"+percentage;\n\t\tif(max_discount!=null)\n\t\t\tfinal_str=final_str+\", Maximum discount: \"+max_discount;\n\t\tif(flat_amount==\"\" && percentage==\"\" && max_discount==\"\")\n\t\t\treturn appsmith.store.computertemp;\n\t\telse\n\t\t  return final_str;\n\t},\n\tmyFun2: async () => {\n\t\t//use async-await or promises\n\t}\n}",
+    "variables": [
+      {
+        "name": "myVar1",
+        "value": []
+      },
+      {
+        "name": "myVar2",
+        "value": {}
+      }
+    ]
+  },
+  "id": "Campaign Group Form_JSObject1",
+  "deleted": false,
+  "gitSyncId": "63074c1e8b81f440510de53b_630ddc958b81f440510de5ee"
+}

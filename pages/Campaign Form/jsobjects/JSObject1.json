@@ -1,0 +1,15 @@
+{
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Campaign Form",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "actions": [],
+    "archivedActions": [],
+    "body": "export default {\n\tmyFun1: async () => {\n\t},\n\tmyFun2: () => {\n\t  const sequence=[\"1\",\"2\",\"3\"];\n\t\tstoreValue(\"sequence\",sequence);\n\t}\n}",
+    "variables": []
+  },
+  "id": "Campaign Form_JSObject1",
+  "deleted": false,
+  "gitSyncId": "63074c1e8b81f440510de53b_630de2178b81f440510de5fe"
+}
